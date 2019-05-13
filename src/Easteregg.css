@@ -1,0 +1,46 @@
+body{
+	background-image: url("motivation.jpg");
+    background-color:aquamarine;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    background-size: 400px 190px, cover;   
+}
+
+#button-score{
+	
+	/*background:url(bilder/StundenplanBild.PNG);*/
+    background: url("score.PNG")no-repeat;
+    background-size: 200px;
+    background-color:white;
+	position: absolute;
+	top:50%;
+	left:30%;
+	width:40%;
+	height:20%;
+	border-radius:20px;
+	
+	
+	font-size: 20px;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-align: right;
+}
+
+
+#button-back{
+	
+    position: absolute;
+	bottom:3%;
+	left:42%;
+	width:15%;
+	height:5%;
+	border-radius:20px;
+	
+    
+	font-size: 10px;
+}
+
+#add-func{
+    
+}

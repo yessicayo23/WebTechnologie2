@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Your Level!</title>
+	<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+	<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+	<script src='https://unpkg.com/babel-standalone@6/babel.min.js'></script>
+	<link href="Easteregg.css" type="text/css" rel="stylesheet"/>
+
+</head>
+<body>
+    
+    <div id='Easteregg'></div>
+	<script type = 'text/babel'>
+    //Score-Button
+    class Score extends React.Component{
+			constructor(probs){
+				super(probs);
+			}
+			
+			geklickt(){   //Eventhandler
+				window.location.href="Score.html"
+			}
+        
+            
+			
+			render(){
+				return (
+						<div>   
+                            <button id="button-score" onClick={this.geklickt.bind(this)}>Add your new score</button>
+                        </div>
+					);
+			}
+		}
+    //Home-Button
+    class Back extends React.Component{
+			constructor(probs){
+				super(probs);
+			}
+			
+			geklickt(){   //Eventhandler
+				window.location.href="Startbild.html"
+			}
+			
+			render(){
+				return (
+						<div>   
+                            <button id="button-back" onClick={this.geklickt.bind(this)}>Back to Base!</button>
+                        </div>
+					);
+			}
+		}
+    
+            
+    //Allgemein
+		function Sitelevel(){
+			return (
+				<div id='Sitelevel'>
+                    <Score />    
+					<Back />
+				</div>
+			);
+		}
+		ReactDOM.render(
+			<Sitelevel />,
+			document.getElementById('Easteregg')
+		)
+        
+   
+
+    </script>
+    
+    
+                
+
+</body>	
+</html>

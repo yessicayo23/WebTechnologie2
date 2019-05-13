@@ -1,0 +1,32 @@
+body{
+	background-image: url("motivation.jpg");
+    background-color:aquamarine;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    background-size: 400px 190px, cover;   
+}
+
+
+#button-back2{
+	
+    position: relative;
+	bottom:30%;
+	left:42%;
+	width:15%;
+	height:5%;
+	border-radius:20px;
+	
+    
+	font-size: 10px;
+}
+
+#add-func{
+    
+    position: absolute;
+	top:10%;
+	left: 5%;   
+    font-size: 20px;
+    
+    
+}
