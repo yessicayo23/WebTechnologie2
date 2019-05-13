@@ -48,7 +48,7 @@
 			render(){
 				return (
 						<div>   
-							<button id="button-Lernraeume" onClick={this.geklickt.bind(this)}>Lernr‰ume</button>
+							<button id="button-Lernraeume" onClick={this.geklickt.bind(this)}>Lernr√§ume</button>
 						</div>
 					);
 			}
@@ -89,6 +89,25 @@
 				return (
 						<div>   
 							<button id="button-Ausfall" onClick={this.geklickt.bind(this)}>Ausfall</button>
+						</div>
+					);
+			}
+		}
+		
+	 //Easter-egg
+		class Easteregg extends React.Component{
+			constructor(probs){
+				super(probs);
+			}
+			
+			geklickt(){   //Eventhandler
+				window.location.href="Easteregg/Yourlevel.html"
+			}
+			
+			render(){
+				return (
+						<div>   
+							<button id="button-Easteregg" onClick={this.geklickt.bind(this)}>Your Level!</button>
 						</div>
 					);
 			}
